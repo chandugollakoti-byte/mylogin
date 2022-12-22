@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <title>Login or Sign Up</title>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&display=swap');
+body { background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
+#lgn { position: fixed; top: 65%; left: 35%; border: none; padding: 10px 3px 10px 3px; width: 10%; border-radius: 3px; background-color: #4267B2; color: #fff; }
+#u-nam, #pwd { position: fixed; top: 20%; left: 30%; font-size: 220%; font-family: 'Mukta', sans-serif; color: yellow;} 
+#u-inp, #pw-inp { position: fixed; font-size: medium; top: 40%; width: 30%;font-family: 'Chivo Mono', monospace; font-family: 'Mukta', sans-serif; outline:  none; padding: 15px 8px 15px 8px; border: none; border-radius: 5px; left: 30%; }
+</style>
+<div id="log-form">
+<form id="lg-frm">
+<label id="u-nam">Username</label>
+<input id="u-inp" style="top: 30%;" type="text" placeholder="Username..." maxlength="35" required /><br><br>
+<label id="pwd" style="top: 40%;">Password</label>
+<input id="pw-inp" style="top: 50%;" type="password" placeholder="Password" required /><br><br>
+<input id="lgn" type="submit" value="Login" />
+</form>
+</div>
+</body>
+</html>

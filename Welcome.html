@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+<body>
+   <style>
+     @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Mukta:wght@300&display=swap'); 
+        #ac { position: fixed; right: 5%; top: 3%; font-size: 190%; }
+        #lg-btn { position: fixed; height: 5%; width: 10%; background-color: #53e681; right: 3.5%; border-radius: 4px; top: 14.4%; }
+        #sgn-btn { position: fixed; height: 5%; width: 10%; background-color: #53e681; right: 3.5%; border-radius: 4px; top: 25%; }
+        #hd { color: #fff; font-size: 200%; position: fixed; left: 8%; top: 2%;  font-family: 'Chivo Mono', monospace; font-family: 'Mukta', sans-serif; }
+       #men1 { color: #fff; top: 3.7%; position: fixed; left: 1.5%;  }
+       .pro { position: fixed; height: 30%; width: 15%; display: none; background-color: #4287f5; right: 1%; top: 7.5%; border-radius: 7px;  }
+        .material-icons:hover, #hd:hover, #men1:hover { cursor: pointer; color:  #04d9ff;  }
+       .material-icons { color: #fff;  }
+#top-nav { position: fixed;  width: 100%; height: 10%; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,122,1) 33%, rgba(0,212,255,1) 100%); top: 0; left: 0; }
+#bck {color: #fff; position: fixed; left: 5%; top: 5%; font-size: 205%; }
+    </style>
+
+    <div id="top-nav" >
+      <span id="men1" class="material-icons">menu</span>
+      <span id="hd">GMC</span>
+<span id="ac" onclick="opp()" class="material-icons">account_circle</span> 
+    </div>
+    <div style="text-align: center;" class="pro">
+<div id="lg-btn"><span style="color: #fff; position: fixed; top: 16%; right: 7%;">LOGIN</span></div>
+<div id="sgn-btn"><span style="color: #fff; position: fixed; top: 26.4%; right: 6.5%;">SIGN UP</span></div>
+    </div>
+    <script>
+     jQuery(document).ready(function($){ 
+    $(".pro").hide();
+    $(".pro").click(function(opp){ 
+        $(this).next().slideToggle("slow"); 
+    });
+});
+    </script>
+</body>
+</html>
